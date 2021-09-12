@@ -1,0 +1,17 @@
+{
+  "name": "Node.js Sample",
+  "dockerFile": "Dockerfile",
+  "appPort": 3000,
+  "runArgs": ["-u", "node"],
+  "settings": {
+    "terminal.integrated.profile.linux": "/bin/bash"
+  },
+  "postCreateCommand": "npm install",
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    "donjayamanne.githistory"
+  ]
+}
